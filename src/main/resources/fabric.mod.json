@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "simpleclienttools",
+  "version": "${version}",
+  "name": "SimpleClientTools",
+  "description": "a fabric mod that provides useful features",
+  "authors": [],
+  "contact": {},
+  "license": "unlicense",
+  "icon": "assets/simpleclienttools/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.thesilentnights.simpleclienttools.client.SimpleclienttoolsClient"
+    ],
+    "main": [
+      "com.thesilentnights.simpleclienttools.Simpleclienttools"
+    ]
+  },
+  "mixins": [
+    "simpleclienttools.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
