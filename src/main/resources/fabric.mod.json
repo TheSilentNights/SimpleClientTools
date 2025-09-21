@@ -15,7 +15,8 @@
     ],
     "main": [
       "com.thesilentnights.simpleclienttools.Simpleclienttools"
-    ]
+    ],
+    "modmenu": ["com.thesilentnights.simpleclienttools.compact.ModMenuCompact"]
   },
   "mixins": [
     "simpleclienttools.mixins.json"
