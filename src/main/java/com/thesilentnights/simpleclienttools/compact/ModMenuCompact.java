@@ -8,9 +8,6 @@ import net.minecraft.client.gui.screen.Screen;
 public class ModMenuCompact implements ModMenuApi {
     @Override
     public ConfigScreenFactory<?> getModConfigScreenFactory() {
-        return (ConfigScreenFactory<Screen>) parent -> {
-            ConfigMenu.initialize();
-            return ConfigMenu.getConfigScreen();
-        };
+        return (ConfigScreenFactory<Screen>) parent -> ConfigMenu.getConfigScreen();
     }
 }
